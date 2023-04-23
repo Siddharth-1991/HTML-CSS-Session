@@ -6,75 +6,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .form-inp {
+            display: flex;
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+        }
+    </style>
 
     <form>
         <div class="pad">
             <label>Full Name</label>
             <label class="starred">*</label>
         </div>
-        <div class="space">
 
+
+        <div class="form-inp">
+            <input type="text" placeholder="first name">
             <div class="form-inp">
-                <input type="text" placeholder="first name">
-                <div class="form-inp">
-                    <input type="text" placeholder="last name">
+                <input type="text" placeholder="last name">
 
-                </div>
             </div>
-        
-        
+        </div>
+
+
+
         <div>
             <label>Phone Number</label>
             <label class="starred">*</label>
-            <input type="number" placeholder="phone number">
+            <div class="form-inp">
+                <input type="number" placeholder="phone number">
 
+            </div>
         </div>
-    </div>
-    <div class="space">
-        <div class="space">
+
+        <div>
+
             <label>Address</label>
             <label class="starred">*</label>
-            <input type="text" placeholder="Address">
-            
         </div>
-        <div>
-            <input type="text" placeholder="city">
+        <div class="form-inp">
+            <div>
+                <input type="text" placeholder="Address">
+            </div>
 
-        </div>
-        <div>
-            <input type="text" placeholder="state">
+            <div>
+                <input type="text" placeholder="city">
 
-        </div>
-        <div>
-            <input type="number" placeholder="postal code">
+            </div>
+            <div>
+                <input type="text" placeholder="state">
 
-        </div>
-        <div>
-            <input type="email" placeholder="Email">
+            </div>
+            <div>
+                <input type="number" placeholder="postal code">
 
+            </div>
+            <div>
+                <input type="email" placeholder="Email">
+
+            </div>
         </div>
         <div><label>How did you know about us?</label>
-            <select >
+            <select class="form-inp">
                 <option> Please Select</option>
                 <option>facebook</option>
                 <option>Google</option>
                 <option>Instagram</option>
                 <option>Ads</option>
-            </select></div>
-            <div>
-                <label>Feedback about us:</label>
-                <textarea></textarea>
-            </div>
-            <div>
-                <label>Will you be willing to recommend us?</label>
+            </select>
+        </div>
+        <div>
+            <label class="form-inp">Feedback about us:</label>
+            <textarea></textarea>
+        </div>
+        <div>
+            <label class="form-inp">Will you be willing to recommend us?</label>
             <input type="radio" name="abc">Yes
             <input type="radio" name="abc">No
             <input type="radio" name="abc">Maybe
-            </div>
+        </div>
 
 
 
-    </div>
+        </div>
 
 
     </form>
